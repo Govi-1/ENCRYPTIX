@@ -1,0 +1,19 @@
+while True: 
+    number1=int(input("Enter Number 1:"))
+    number2=int(input("Enter Number 2:"))
+    operator=input("Enter Operator +,-,*,/,% :")
+    if operator=='+':
+        print(number1,"+",number2,"=",(number1+number2))
+    elif operator=='-': 
+        print(number1,"-",number2,"=",(number1-number2))
+    elif operator=='*':
+        print(number1,"*",number2,"=",(number1*number2))
+    elif operator=='/':
+        print(number1,"/",number2,"=",float(number1/number2))
+    elif operator=='%':
+        print(number1,"%",number2,"=",float(number1%number2))
+    else:
+        print("You Entered an Invalid Operator ....")
+    choice=input("Do you want to continue Yes/No").lower()
+    if choice!="yes":
+        break
